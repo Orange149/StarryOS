@@ -10,8 +10,13 @@ make ARCH=riscv CROSS_COMPILE=riscv64-linux-musl- CONFIG_PREFIX=$(pwd)/_install 
 ```
 
 ## 文件系统制作
-1、修改rootfs.sh: BUSY_BOX_DIR
-2、执行sudo ./rootfs.sh
+1、设置 `BUSY_BOX_DIR` 指向 BusyBox 的 `_install` 目录
+2、执行 `./rootfs.sh`
+
+```bash
+cd rootfs
+BUSY_BOX_DIR=/path/to/busybox-1.37.0/_install ./rootfs.sh
+```
 
 ## 文件系统使用
 

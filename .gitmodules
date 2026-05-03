@@ -2,3 +2,6 @@
 	path = arceos
 	url = https://github.com/arceos-starry/arceos
 	branch = dev
+[submodule "sg200x-bsp"]
+	path = sg200x-bsp
+	url = https://github.com/yfblock/sg200x-bsp

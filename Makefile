@@ -55,8 +55,8 @@ vf2:
 	$(MAKE) ARCH=riscv64 APP_FEATURES=vf2 MYPLAT=axplat-riscv64-visionfive2 BUS=mmio build
 
 sg2002:
-	$(MAKE) ARCH=riscv64 APP_FEATURES=sg2002 MYPLAT=axplat-riscv64-sg2002 LOG=debug BUS=mmio build
-	riscv64-linux-musl-objdump -x -a -D ./StarryOS_sg2002.elf > asm.txt
+	$(MAKE) ARCH=riscv64 APP_FEATURES=sg2002 MYPLAT=axplat-riscv64-sg2002 LOG=warn BUS=mmio build
+	riscv64-linux-musl-objdump -x -a -D ./StarryOS-sg2002-ref_sg2002.elf > asm.txt
 
 
 .PHONY: build run justrun debug disasm clean
